@@ -8,5 +8,5 @@ convert a query from influxdb into a cvs file
 #### Other non required parameter :
 * `--port="<influxdb_port>"` : default 8086
 * `--quote` : add quote to the output, default to false
-* `--timeFormat="<time_format>"` : manage time format of time column (always present), dafault to "DD-MM-YYYY"
+* `--timeFormat="<time_format>"` : manage time format of time column (always present), default to "DD-MM-YYYY"
 * `--output="<output_file>"` : name of the output file : default to "out.csv"
