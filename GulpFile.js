@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////////////////////////////////
+// Imports
+////////////////////////////////////////////////////////////////////////////////////
+
+var gulp = require('gulp');
+
+var traceur = require('gulp-traceur');
+
+var debug = require('gulp-debug');
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// Tasks
+////////////////////////////////////////////////////////////////////////////////////
+
+gulp.task('build-sources', function () {
+    return gulp.src('src/javascript/**/*.js')
+        .pipe(traceur())
+        .pipe(gulp.dest('build'));
+});
+
+gulp.task('copy-project-resources', function () {
+    return gulp.src('{package.json,README.md}')
+        .pipe(gulp.dest('build/'));
+});
+
+// default gulp task
+gulp.task('default', ['build-sources', 'copy-project-resources']);
