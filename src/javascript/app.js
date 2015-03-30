@@ -9,6 +9,7 @@ var influxUrl = `http://${config.influxdb.host}:${config.influxdb.port}/db/${con
 console.log("url : ", influxUrl);
 
 request({url: influxUrl, json: true}, (error, response, body) => {
+
     var columns = body.columns;
     var ws = fs.createWriteStream(config.output);
     csv.write(body.points,
