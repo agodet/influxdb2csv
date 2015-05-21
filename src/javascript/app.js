@@ -4,7 +4,7 @@ var fs = require('fs');
 var csv = require("fast-csv");
 var moment = require('moment');
 
-var influxUrl = `http://${config.influxdb.host}:${config.influxdb.port}/db/${config.influxdb.database}/series?chunked=true&q=${config.influxdb.query};&u=${config.influxdb.user}&p=${config.influxdb.password}`;
+var influxUrl = `http://${config.influxdb.host}:${config.influxdb.port}/db/${config.influxdb.database}/series?q=${config.influxdb.query};&u=${config.influxdb.user}&p=${config.influxdb.password}`;
 
 console.log("url : ", influxUrl);
 
