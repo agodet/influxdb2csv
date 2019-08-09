@@ -3,16 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "fast-csv": "~0.5.6",
-    "lodash": "^2.4.1",
-    "moment": "~2.6.0",
-    "request": "~2.53.0",
-    "minimist": "~1.1.0"
+    "fast-csv": "~3.4.0",
+    "lodash": "^4.17.15",
+    "moment": "~2.24.0",
+    "request": "~2.88.0",
+    "minimist": "~1.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-debug": "^2.0.0",
-    "gulp-sourcemaps": "^1.2.8",
-    "gulp-traceur": "^0.14.1"
+    "gulp": "^4.0.2"
   }
 }

@@ -4,18 +4,12 @@
 
 var gulp = require('gulp');
 
-var traceur = require('gulp-traceur');
-
-var debug = require('gulp-debug');
-
-
 ////////////////////////////////////////////////////////////////////////////////////
 // Tasks
 ////////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('build-sources', function () {
     return gulp.src('src/javascript/**/*.js')
-        .pipe(traceur())
         .pipe(gulp.dest('build'));
 });
 
